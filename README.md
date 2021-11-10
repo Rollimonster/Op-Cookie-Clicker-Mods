@@ -1,10 +1,9 @@
 # Op-Cookie-Clicker-Mods
-//Press Control+Shift+I, and then paste the mod in Console.\\
+//Open Inspect Element, and paste the script into the console tab\\
 
 prompt("Press K to spawn a golden cookie.");
 prompt("Press A to earn all Achievments");
 
-        //Spawn Golden Cookies\\
 window.addEventListener('keydown', function(e){
 if(e.key == "k"){
 var newShimmer=new Game.shimmer("golden");
@@ -12,7 +11,7 @@ var newShimmer=new Game.shimmer("golden");
       newShimmer.spawnLead=1;(parseInt(ez));
 }
 });
-        //All Achievments\\
+
 window.addEventListener('keydown', function(e){
 if(e.key == "a"){
 Object.values(Game.AchievementsById).forEach(function(e) {
@@ -21,7 +20,6 @@ Object.values(Game.AchievementsById).forEach(function(e) {
 }
 });
 
-        //Insanely Op Cookie Clicker Hack\\
 var intervalID = window.setInterval(myCallback, 1);
 
 function myCallback() {
